@@ -1,13 +1,13 @@
 import Image from "next/image";
-
+import ReservationSidebar from "@/app/components/properties/ReservationSidebar";
 
 const PropertyDetailPage = () => {
     return (
         <main className="max-w-[1500px] mx-auto px-6">
-        <div className="w-full h-[64vh] overflow-hidden rounded-xl relative">
+        <div className="w-full h-[64vh] mb-4 overflow-hidden rounded-xl relative">
             <Image
                 fill
-                src="/beach_1.jpg"
+                src='/beach_1.jpg'
                 className="object-cover w-full h-full"
                 alt="Beach house"
                 />
@@ -32,6 +32,7 @@ const PropertyDetailPage = () => {
 
                     <p><strong>Mariel Báez</strong> is your host</p>
                 </div>
+
                 <hr />
 
                 <p className="mt-6 text-lg">
@@ -44,9 +45,7 @@ const PropertyDetailPage = () => {
                 </div>
                 <ReservationSidebar />
             </div>
-            <div>
-                right
-            </div>
+            
         </div>
         </main>
     )
