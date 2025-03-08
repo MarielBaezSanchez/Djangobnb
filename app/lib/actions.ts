@@ -23,3 +23,14 @@ export async function handleLogin(userId: string, accessToken: string, refreshTo
         path: '/'
     });
 }
+
+export async function resetAuthCookies() {
+    (await cookies()).set('session_userId', '',);
+    (await cookies()).set('session_accessToken', '',);
+    (await cookies()).set('session_refreshToken', '',);
+}
+
+export async function getUserId() {
+    const userId = (await cookies()).get('session_userId')?.value;
+    return userId ? userId : null;
+}

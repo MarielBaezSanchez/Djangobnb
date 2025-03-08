@@ -14,23 +14,21 @@ const ConversationDetail = () => {
             <p className="font-bold text-gray-500">Saskatchewan Boy</p>
             <p>Chicas, ¿ustedes han ido a Saskatchewan?</p>
         </div>
-        </div>
+    </div>
         {/* <div className="mt-4 py-4 px-6 flex items-center border border-gray-300 space-x-4 rounded-xl"></div> */}
         <div className="mt-4 py-4 px-6 flex border border-gray-300 space-x-4 rounded-xl">
-        <input
-        type="text"
-        placeholder="Escribe un mensaje..."
-        className="w-full p-2 bg-gray-200 rounded-xl"
-        />
-        <CustomButton
-        label="Send" 
-        onClick={() => {
-            console.log("Le apachurraste...");
-        }}
-        className="w-[100px]"
-        />
-        </div>
-    </>
+            <input
+                type="text"
+                placeholder="Escribe un mensaje..."
+                className="w-full p-2 bg-gray-200 rounded-xl"
+            />
+            <CustomButton 
+                    label='Send'
+                    onClick={() => {console.log('Le puchaste...')}}
+                    className="w-[100px]"
+                />
+            </div>
+        </>
     );
 };
 export default ConversationDetail;

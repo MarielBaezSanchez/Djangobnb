@@ -1,13 +1,14 @@
 'use client';
-import useSignupModal from "@/app/hooks/useSignupModal";
- import Modal from "./Modal";
- import CustomButton from "../forms/CustomButton";
- import { useRouter } from "next/navigation";
- import { useState } from "react";
- import apiService from "@/app/services/apiService";
- import { handleLogin } from "@/app/lib/actions";
 
- const SignupModal = () => {
+import useSignupModal from "@/app/hooks/useSignupModal";
+import Modal from "./Modal";
+import CustomButton from "../forms/CustomButton";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
+import apiService from "@/app/services/apiService";
+import { handleLogin } from "@/app/lib/actions";
+
+const SignupModal = () => {
     const router = useRouter()
     const signupModal = useSignupModal()
     const [email, setEmail] = useState("")
@@ -37,19 +38,15 @@ import useSignupModal from "@/app/hooks/useSignupModal";
         }
     }
 
-
     const content = (
         <>
             {/* <h2 className="mb-6 text-2xl">
-              </h2> */}
+                Wenas wenas, registrate
+            </h2> */}
             <form
                 action={submitSignup}
                 className="space-y-4"
             >
-
-            </form>
-                Registrate porfis
-                
                 <input
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Your E-mail"
@@ -75,6 +72,7 @@ import useSignupModal from "@/app/hooks/useSignupModal";
                         {error}
                     </div>
                 ))}
+
                 <CustomButton
                     label="Submit"
                     onClick={submitSignup}
