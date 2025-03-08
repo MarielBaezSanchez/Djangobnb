@@ -9,7 +9,7 @@ const MyReservationsPage = () => {
             <div>
                 <div className="p-5 mt-4 grid grid-cols-1 md:grid-cols-4 gap-4 shadow-md border border-gray-300 rounded-xl">
                     <div className="col-span-1">
-                        <div className="relative overflow-hidden aspect-square rounded-xl">
+                        <div className="overflow-hidden aspect-square rounded-xl relative">
                             <Image
                             fill
                             src="/beach_1.jpg"
