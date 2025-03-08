@@ -1,12 +1,10 @@
 interface CustomButtonProps {
     label: string;
-    className: String;
     onClick: () => void;
 }
 
 const CustomButton: React.FC<CustomButtonProps> = ({
     label,
-    className,
     onClick
 }) => {
     return (
