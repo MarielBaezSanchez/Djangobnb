@@ -1,6 +1,7 @@
 interface CustomButtonProps {
     label: string;
     onClick: () => void;
+    className?: string;//ayuda de chat para quitar error
 }
 
 const CustomButton: React.FC<CustomButtonProps> = ({
